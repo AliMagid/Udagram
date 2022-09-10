@@ -31,7 +31,7 @@ jobs:
       id: create
       uses: atlassian/gajira-create@master
       with:
-        project: ${{JIRA_PROJECT_KEY}}
+        project: ${{env.JIRA_PROJECT_KEY}}
         issuetype: Task
         summary: |
           Github PR nd9990 - Cloud Developer  | Repo: ${{ github.repository }}  | PR# ${{github.event.number}}
