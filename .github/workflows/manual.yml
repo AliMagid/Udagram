@@ -10,8 +10,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-env:
-  JIRA_PROJECT_KEY: ${{ secrets.JIRA_PROJECT_KEY }}
+
 jobs:
   test-transition-issue:
     name: Convert Github Issue to Jira Issue
@@ -31,7 +30,7 @@ jobs:
       id: create
       uses: atlassian/gajira-create@master
       with:
-        project: ${{env.JIRA_PROJECT_KEY}}
+        project: UM
         issuetype: Task
         summary: |
           Github PR nd9990 - Cloud Developer  | Repo: ${{ github.repository }}  | PR# ${{github.event.number}}
