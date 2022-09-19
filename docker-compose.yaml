@@ -35,6 +35,6 @@ services:
       FWD_JWT_SECRET: $FWD_JWT_SECRET
       FWD_URL: $FWD_URL
   frontend:
-    image: udagram-frontend:local
+    image: udagram-frontend
     ports:
       - "8100:80"
