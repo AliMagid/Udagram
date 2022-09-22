@@ -1,0 +1,7 @@
+FWD_POSTGRES_HOST=udagramdev.cyuuinilgkpt.us-east-1.rds.amazonaws.com
+FWD_POSTGRES_DB=udagramdev
+FWD_AWS_BUCKET=udagram-884730520809-dev
+FWD_AWS_REGION=us-east-1
+FWD_AWS_PROFILE=UdacityLab
+FWD_JWT_SECRET=testing
+FWD_URL=http://localhost:8100
