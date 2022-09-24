@@ -8,12 +8,8 @@ metadata:
   # selfLink: /api/v1/namespaces/default/services/my-app-2-svc
 spec:
   ports:
-  - port: 8100
-    protocol: TCP
-    targetPort: 8100
+  - name: "8100"
+    port: 8100
+    targetPort: 80
   selector:
-    app: udagram-frontend
-  sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: {}
+    service: frontend

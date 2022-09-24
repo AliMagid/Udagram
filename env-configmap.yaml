@@ -1,7 +1,12 @@
-FWD_POSTGRES_HOST=udagramdev.cyuuinilgkpt.us-east-1.rds.amazonaws.com
-FWD_POSTGRES_DB=udagramdev
-FWD_AWS_BUCKET=udagram-884730520809-dev
-FWD_AWS_REGION=us-east-1
-FWD_AWS_PROFILE=UdacityLab
-FWD_JWT_SECRET=testing
-FWD_URL=http://localhost:8100
+apiVersion: v1
+kind: ConfigMap
+data:
+  FWD_POSTGRES_HOST: udagramdev.cjjculrh2cop.us-east-1.rds.amazonaws.com
+  FWD_POSTGRES_DB: udagramdev
+  FWD_AWS_BUCKET: udagram-201109343363-dev
+  FWD_AWS_REGION: us-east-1
+  FWD_AWS_PROFILE: default
+  FWD_JWT_SECRET: testing
+  FWD_URL: http://a145fb193957c4f3da829331e5ce2dee-1978952111.us-east-1.elb.amazonaws.com
+metadata:
+  name: env-config
