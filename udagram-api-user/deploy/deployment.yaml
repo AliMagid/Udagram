@@ -18,13 +18,13 @@ spec:
       - image: fego/udagram-api-user
         name: backend-user
         imagePullPolicy: Always  
-        # resources:
-        #   requests:
-        #     memory: "4024Mi"
-        #     cpu: "250m"
-        #   limits:
-        #     memory: "5024Mi"
-        #     cpu: "500m"                  
+        resources:
+          requests:
+            memory: "4024Mi"
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"
+            cpu: "500m"                  
         env:
         - name: FWD_URL
           valueFrom:

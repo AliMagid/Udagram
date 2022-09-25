@@ -18,13 +18,13 @@ spec:
       - image: fego/udagram-api-feed
         name: backend-feed
         imagePullPolicy: Always  
-        # resources:
-        #   requests:
-        #     memory: "4024Mi"
-        #     cpu: "2000m"
-        #   limits:
-        #     memory: "5024Mi"
-        #     cpu: "4000m"                  
+        resources:
+          requests:
+            memory: "4024Mi"
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"
+            cpu: "500m"                  
         env:
         - name: FWD_URL
           valueFrom:
