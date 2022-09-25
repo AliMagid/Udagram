@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  FWD_POSTGRES_HOST: udagramdev.cjjculrh2cop.us-east-1.rds.amazonaws.com
+  FWD_POSTGRES_HOST: udagramdev.ccqeivcbeqyc.us-east-1.rds.amazonaws.com
   FWD_POSTGRES_DB: udagramdev
-  FWD_AWS_BUCKET: udagram-201109343363-dev
+  FWD_AWS_BUCKET: udagram-249241398491-dev
   FWD_AWS_REGION: us-east-1
   FWD_AWS_PROFILE: default
   FWD_JWT_SECRET: testing
