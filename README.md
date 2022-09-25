@@ -22,8 +22,6 @@ The project is split into four parts:
 
 # Screenshots
 
-To help review your infrastructure, please include the following screenshots in this directory::
-
 ## Deployment Pipeline
 
 - DockerHub showing containers that I have pushed
@@ -53,9 +51,10 @@ To help review your infrastructure, please include the following screenshots in 
 - API pod logs indicates user activity that is logged when an API call is made
   ![login-user-logs](https://github.com/mohammedfarag/udacity-cd0354-monolith-to-microservices-project/blob/main/screenshots/LogsIndicatesUserActivity.png)
 
-- To verify that you have set up logging with a backend application K8sDescribe-reverseproxy
+- To verify that you have set up logging with a backend application in addition to reverseproxy describe result
   ![reverseproxy-desc](https://github.com/mohammedfarag/udacity-cd0354-monolith-to-microservices-project/blob/main/screenshots/K8sDescribe-reverseproxy.png)
   ![reverseproxy-logs](https://github.com/mohammedfarag/udacity-cd0354-monolith-to-microservices-project/blob/main/screenshots/ReversproxyLogs.png)
+
 
 ## URLs:
 
