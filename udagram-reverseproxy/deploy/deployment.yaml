@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: fego/reverseproxy
+      - image: alolo1001/reverseproxy:v17
         name: reverseproxy
         imagePullPolicy: Always          
         # resources:

@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: fego/udagram-api-feed
+      - image: alolo1001/udagram-api-feed:v17
         name: backend-feed
         imagePullPolicy: Always  
         resources:

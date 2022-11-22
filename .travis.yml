@@ -19,14 +19,11 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker-compose -f docker-compose-build.yaml build --parallel
-  - docker tag udagram-api-feed fego/udagram-api-feed
-  - docker tag udagram-api-user fego/udagram-api-user
-  - docker tag reverseproxy fego/reverseproxy
-  - docker tag udagram-frontend fego/udagram-frontend
+
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push fego/udagram-api-feed
-  - docker push fego/udagram-api-user
-  - docker push fego/reverseproxy
-  - docker push fego/udagram-frontend
+  - docker push alolo1001/udagram-api-feed
+  - docker push alolo1001/udagram-api-user
+  - docker push alolo1001/reverseproxy
+  - docker push alolo1001/udagram-frontend

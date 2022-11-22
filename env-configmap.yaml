@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  FWD_POSTGRES_HOST: udagramdev.ccqeivcbeqyc.us-east-1.rds.amazonaws.com
-  FWD_POSTGRES_DB: udagramdev
-  FWD_AWS_BUCKET: udagram-249241398491-dev
-  FWD_AWS_REGION: us-east-1
+  FWD_POSTGRES_HOST: udabase.cx4fssvvpmjs.us-east-2.rds.amazonaws.com
+  FWD_POSTGRES_DB: postgres
+  FWD_AWS_BUCKET: udagram-p3
+  FWD_AWS_REGION: us-east-2
   FWD_AWS_PROFILE: default
   FWD_JWT_SECRET: testing
-  FWD_URL: http://ad59171c86fc54c999c02e3d28cd530c-126604541.us-east-1.elb.amazonaws.com
+  FWD_URL: http://localhost:8100
 metadata:
   name: env-config

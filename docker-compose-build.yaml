@@ -1,18 +1,18 @@
-version: "3"
+version: "17"
 services:
   reverseproxy:
     build:
       context: ./udagram-reverseproxy
-    image: reverseproxy
+    image: alolo1001/reverseproxy:v17
   backend_user:
     build:
       context: ./udagram-api-user
-    image: udagram-api-user
+    image: alolo1001/udagram-api-user:v17
   backend_feed:
     build:
       context: ./udagram-api-feed
-    image: udagram-api-feed
+    image: alolo1001/udagram-api-feed:v17
   frontend:
     build:
       context: ./udagram-frontend
-    image: udagram-frontend
+    image: alolo1001/udagram-frontend:v11
